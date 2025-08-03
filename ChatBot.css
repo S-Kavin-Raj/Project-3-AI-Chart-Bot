@@ -1,0 +1,124 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('backgroundimage.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    backdrop-filter: blur(2px);
+}
+
+#container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#title_box h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #00f0aa, #3399ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#chatbox {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(20, 20, 20, 0.88);
+    border: 2px solid #00e5ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px #00c3ff;
+}
+
+#chatbox h2 {
+    margin-bottom: 10px;
+    color: #00d9ff;
+}
+
+#response {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding-right: 5px;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 10px;
+    margin: 8px 0;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.user-message {
+    background-color: rgba(36, 36, 36, 0.95);
+    text-align: right;
+    border-left: 4px solid #00f2ff;
+    margin: 5px;
+}
+
+.ai-message {
+    background-color: rgba(40, 40, 40, 0.95);
+    color: #e6faff;
+    text-align: left;
+    border-right: 4px solid #3399ff;
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 14px;
+
+}
+
+#userInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    height: 80px;
+    background-color: #0a0a0a;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    left: -12px;
+    border: 2px solid #00ccff;
+    font-size: large;
+}
+
+#askButton {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00ccff, #3385ff);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#askButton:hover {
+    background: linear-gradient(to right, #3385ff, #00ccff);
+    transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+    #title_box h1 {
+        font-size: 1.8rem;
+    }
+
+    #chatbox {
+        padding: 15px;
+    }
+}
